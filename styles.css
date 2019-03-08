@@ -1,0 +1,14 @@
+input{
+  width:599px;
+  height:125px;
+  position:absolute;
+  left:349px;
+  top:15px;
+  text-align: right;
+  font-size: 60px;
+}
+#clicker{
+  position:absolute;
+  left:651px;
+  top:148px;
+}
