@@ -21,6 +21,7 @@
   top: 150px;
   width: 300px;
   height: 100px;
+  background-color: #77ffff;
 }
 #reset{
   position:absolute;
@@ -28,9 +29,20 @@
   top:252px;
   width: 300px;
   height:100px;
+  background-color: #77ffff;
 }
 button{
   background-color: white;
   border: 1px solid black;
-
+}
+#machineBuy{
+  position: absolute;
+  left:500px;
+  top:354px;
+  width: 300px;
+  height: 100px;
+  background-color: #77ffff;
+}
+body{
+  background: linear-gradient(#77ffff, #092f72) fixed;
 }
