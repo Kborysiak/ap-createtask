@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ClickerMachine2000</title>
+    <title>Diamond Miner</title>
       <script type="text/javascript" src="index.js"></script>
       <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
     <div class=game>
       <form name="count">
-        <input name="display" disabled>
+        <input name="display" class = display disabled>
       </form>
     </div>
-    <button onclick="countInsert();" id="clicker">Click Me!</button>
+    <div class=stats>
+      <form name="stats">
+        <input name="statsDisplay" class= statsOne disabled>
+      </form>
+    </div>
+    <button onclick="countInsert();" id="clicker">Mine Diamonds!</button>
     <button onclick="reset();" id="reset">Reset Game</button>
-    <button onclick="buyMachine();">Buy an Auto-Clicker</button>
+    <button onclick="buyMachine();">50 Diamonds: Buy an Auto-Clicker</button>
   </body>
 </html>

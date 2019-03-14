@@ -5,6 +5,7 @@ var numMachines = 0;
 function countInsert(){
   document.count.display.value++
   stopGame = false;
+  i++
 }
 
 function reset(){
@@ -15,8 +16,8 @@ function reset(){
   numMachines = 0;
 }
 function buyMachine(){
-  if(document.count.display.value>=25){
-    document.count.display.value = document.count.display.value - 25
+  if(document.count.display.value>=50){
+    document.count.display.value = document.count.display.value - 50
   //  document.count.display.value = i;
     console.log(i)
     numMachines++
@@ -31,6 +32,12 @@ setInterval(function(){
     document.count.display.value = (stored + (machineStatus * 1));
   }
 }, 1000)
+  setInterval(function(){
+    let cpsOverTen = 0;
+    cpsOverTen = i/5
+    i = 0;
+    document.stats.statsDisplay.value = cpsOverTen
+  }, 5000)
 function machineStat(){
   if(machineStatus >= 1){
 
