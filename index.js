@@ -14,32 +14,48 @@ function reset(){
   stopGame = true;
   machineStatus = 0;
   numMachines = 0;
+  document.stats.statsDisplay.value = 0
+  document.numAutoMiners.numAutoMiners.value = 0
 }
+
 function buyMachine(){
   if(document.count.display.value>=50){
-    document.count.display.value = document.count.display.value - 50
-  //  document.count.display.value = i;
-    console.log(i)
+    document.count.display.value = document.count.display.value - 50;
+    console.log(i);
     numMachines++
-    machineStatus=numMachines
+    machineStatus=numMachines;
+    numAutoMiners();
+  }else {
+    alert("Insufficient Funds");
   }
 }
+
 setInterval(function(){
   if(machineStatus >= 1 && stopGame == false){
     let stored = Number(document.count.display.value)
-    document.count.display.value ="";
-    console.log(typeof stored)
+    document.count.display.value = "";
+    console.log(typeof stored);
     document.count.display.value = (stored + (machineStatus * 1));
   }
 }, 1000)
-  setInterval(function(){
-    let cpsOverTen = 0;
-    cpsOverTen = i/5
-    i = 0;
-    document.stats.statsDisplay.value = cpsOverTen
-  }, 5000)
+
+setInterval(function(){
+  let cpsOverTen = 0;
+  cpsOverTen = i/5;
+  i = 0;
+  document.stats.statsDisplay.value = cpsOverTen
+}, 5000)
+
 function machineStat(){
   if(machineStatus >= 1){
 
   }
+}
+function start(){
+  document.stats.statsDisplay.value = 0
+  document.numAutoMiners.numAutoMiners.value = 0
+}
+
+function numAutoMiners(){
+  document.numAutoMiners.numAutoMiners.value = numMachines
 }

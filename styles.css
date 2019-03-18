@@ -11,7 +11,15 @@
   width:300px;
   height:125px;
   position:absolute;
-  top: 50px;
+  top: 75px;
+  text-align: right;
+  font-size: 60px;
+}
+.numAutoMiners{
+  width:300px;
+  height:125px;
+  position:absolute;
+  top: 265px;
   text-align: right;
   font-size: 60px;
 }
@@ -21,15 +29,16 @@
   top: 150px;
   width: 300px;
   height: 100px;
-  background-color: #77ffff;
+  background-color: #77ffff
 }
 #reset{
   position:absolute;
-  left:500px;
-  top:252px;
-  width: 300px;
-  height:100px;
-  background-color: #77ffff;
+  left:10px;
+  top: 550px;
+  width: 100px;
+  height:50px;
+  background-color: salmon;
+  color: white;
 }
 button{
   background-color: white;
@@ -38,11 +47,30 @@ button{
 #machineBuy{
   position: absolute;
   left:500px;
-  top:354px;
+  top: 255px;
   width: 300px;
   height: 100px;
   background-color: #77ffff;
 }
 body{
   background: linear-gradient(#77ffff, #092f72) fixed;
+}
+h1{
+  color: #092f72;
+  margin: 0;
+  padding: 0;
+}
+p{
+  color: #092f72;
+  margin: 0;
+  padding: 10;
+}
+
+#numAutoMiners{
+  position: absolute;
+  left:10px;
+  top: 230px;
+  width: 200px;
+  height:50px;
+  color: #092f72;
 }
