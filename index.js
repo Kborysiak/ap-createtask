@@ -2,6 +2,8 @@ var i = 0;
 var machineStatus = 0;
 var stopGame;
 var numMachines = 0;
+var factStatus = 0;
+var numFact = 0;
 function countInsert(){
   document.count.display.value++
   stopGame = false;
@@ -14,6 +16,8 @@ function reset(){
   stopGame = true;
   machineStatus = 0;
   numMachines = 0;
+  numFact = 0;
+  factStatus = 0;
   document.stats.statsDisplay.value = 0
   document.numAutoMiners.numAutoMiners.value = 0
 }
@@ -59,3 +63,17 @@ function start(){
 function numAutoMiners(){
   document.numAutoMiners.numAutoMiners.value = numMachines
 }
+function buyFactory(){
+  if(document.count.display.value >= 1000){
+    document.count.display.value = document.count.display.value - 1000;
+    numFact++
+    console.log(numFact)
+  }else{
+    alert("Invalid Funds!")
+  }
+}
+setInterval(function(){
+  if(numFact >= 1 && stopGame == false){
+    machineStatus++
+  }
+}, 1020)

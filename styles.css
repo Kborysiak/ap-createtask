@@ -74,3 +74,12 @@ p{
   height:50px;
   color: #092f72;
 }
+
+#factory{
+  position: absolute;
+  left:500px;
+  top: 360px;
+  width: 300px;
+  height: 100px;
+  background-color: #77ffff;
+}
