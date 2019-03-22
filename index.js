@@ -75,5 +75,6 @@ function buyFactory(){
 setInterval(function(){
   if(numFact >= 1 && stopGame == false){
     machineStatus++
+    document.numAutoMiners.numAutoMiners.value = machineStatus
   }
-}, 1020)
+}, 2021)
