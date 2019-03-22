@@ -1,2 +1,2 @@
 # ap-createtask
-Project is a clicker game made with HTML JS && CSS. Developed by Kborysiak & Bnetkin34
+Project is for APCSP create task requirement. Idea for project revolves around a 'clicker' type game, in which user will mine diamonds, and with those diamonds is able to purchase upgrades to mine diamonds even faster. The interface of the clicker game displays the users clicks per second average, over the last 5 seconds, and also shows the amount of diamond and other game related statistics.
