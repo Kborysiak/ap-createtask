@@ -74,7 +74,6 @@ function buyFactory(){
 }
 setInterval(function(){
   if(numFact >= 1 && stopGame == false){
-    let increase = numFact
     machineStatus = machineStatus + numFact
     document.numAutoMiners.numAutoMiners.value = machineStatus
   }
