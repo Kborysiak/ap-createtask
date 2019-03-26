@@ -18,8 +18,8 @@ function reset(){
   numMachines = 0;
   numFact = 0;
   factStatus = 0;
-  document.stats.statsDisplay.value = 0
-  document.numAutoMiners.numAutoMiners.value = 0
+  document.stats.statsDisplay.value = 0;
+  document.numAutoMiners.numAutoMiners.value = 0;
 }
 
 function buyMachine(){
@@ -47,7 +47,7 @@ setInterval(function(){
   let cpsOverTen = 0;
   cpsOverTen = i/5;
   i = 0;
-  document.stats.statsDisplay.value = cpsOverTen
+  document.stats.statsDisplay.value = cpsOverTen;
 }, 5000)
 
 function machineStat(){
@@ -56,8 +56,8 @@ function machineStat(){
   }
 }
 function start(){
-  document.stats.statsDisplay.value = 0
-  document.numAutoMiners.numAutoMiners.value = 0
+  document.stats.statsDisplay.value = 0;
+  document.numAutoMiners.numAutoMiners.value = 0;
 }
 
 function numAutoMiners(){
@@ -67,14 +67,14 @@ function buyFactory(){
   if(document.count.display.value >= 1000){
     document.count.display.value = document.count.display.value - 1000;
     numFact++
-    console.log(numFact)
+    console.log(numFact);
   }else{
-    alert("Invalid Funds!")
+    alert("Invalid Funds!");
   }
 }
 setInterval(function(){
   if(numFact >= 1 && stopGame == false){
-    machineStatus = machineStatus + numFact
-    document.numAutoMiners.numAutoMiners.value = machineStatus
+    machineStatus = machineStatus + numFact;
+    document.numAutoMiners.numAutoMiners.value = machineStatus;
   }
 }, 2021)
