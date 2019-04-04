@@ -11,6 +11,7 @@ function countInsert(){
 }
 
 function reset(){
+  //Colleague Wrote Reset Function//
   document.count.display.value = 0;
   i=0;
   stopGame = true;
@@ -18,7 +19,6 @@ function reset(){
   numMachines = 0;
   numFact = 0;
   factStatus = 0;
-  document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
 }
 
@@ -41,6 +41,7 @@ setInterval(function(){
     console.log(typeof stored);
     document.count.display.value = (stored + (machineStatus * 1));
   }
+  machineStat();
 }, 1000)
 
 setInterval(function(){
@@ -51,8 +52,10 @@ setInterval(function(){
 }, 5000)
 
 function machineStat(){
+  console.log(machineStatus)
   if(machineStatus >= 1){
-
+    let numOfMachines = machineStatus
+    return machineStatus
   }
 }
 function start(){

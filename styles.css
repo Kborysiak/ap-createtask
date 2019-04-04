@@ -34,14 +34,15 @@
 #reset{
   position: absolute;
   left: 10px;
-  top: 550px;
+  top: 850px;
   width: 100px;
   height:50px;
   background-color: salmon;
   color: white;
 }
 button{
-  background-color: white;
+
+  background-color: #77ffff;
   border: 1px solid black;
 }
 #machineBuy{
