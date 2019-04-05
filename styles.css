@@ -23,6 +23,14 @@
   text-align: right;
   font-size: 60px;
 }
+.numAutoFactories{
+  width:300px;
+  height:125px;
+  position:absolute;
+  top: 450px;
+  text-align: right;
+  font-size: 60px;
+}
 
 #clicker{
   position: absolute;
@@ -34,13 +42,8 @@
 }
 #reset{
   position: absolute;
-<<<<<<< HEAD
-  left: 20px;
+  left: 1150px;
   top: 550px;
-=======
-  left: 10px;
-  top: 850px;
->>>>>>> 1433533afd1c4ebf0baaf3df67d6fa8d6c50d3a8
   width: 100px;
   height:50px;
   background-color: salmon;
@@ -58,6 +61,14 @@ button{
   width: 300px;
   height: 100px;
   background-color: #77ffff;
+}
+#numAutoFactories{
+  position: absolute;
+  left:10px;
+  top: 420px;
+  width: 200px;
+  height:50px;
+  color: white;
 }
 body{
   background: linear-gradient(#77ffff, #092f72) fixed;

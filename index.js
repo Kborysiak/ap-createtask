@@ -63,17 +63,23 @@ function machineStat(){
 function start(){
   document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
+  document.numAutoFactories.numAutoFactories.value = 0;
 }
 
 function numAutoMiners(){
   document.numAutoMiners.numAutoMiners.value = numMachines;
 }
 
+function numAutoFactories(){
+  document.numAutoFactories.numAutoFactories.value = numFact;
+}
+
 function buyFactory(){
-  if(document.count.display.value >= 1000){
-    document.count.display.value = document.count.display.value - 1000;
+  if(document.count.display.value >= 10){
+    document.count.display.value = document.count.display.value - 10;
     numFact++
     console.log(numFact);
+    numAutoFactories();
   }else{
     alert("Invalid Funds!");
   }
