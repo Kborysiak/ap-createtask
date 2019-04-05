@@ -4,6 +4,7 @@ var stopGame;
 var numMachines = 0;
 var factStatus = 0;
 var numFact = 0;
+
 function countInsert(){
   document.count.display.value++
   stopGame = false;
@@ -20,6 +21,7 @@ function reset(){
   factStatus = 0;
   document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
+  start();
 }
 
 function buyMachine(){
@@ -58,11 +60,17 @@ function machineStat(){
 function start(){
   document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
+  document.numAutoFactories.numAutoFactories.value = 0;
 }
 
 function numAutoMiners(){
-  document.numAutoMiners.numAutoMiners.value = numMachines
+  document.numAutoMiners.numAutoMiners.value = numMachines;
 }
+
+function numAutoFactories(){
+
+}
+
 function buyFactory(){
   if(document.count.display.value >= 1000){
     document.count.display.value = document.count.display.value - 1000;
