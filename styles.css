@@ -34,15 +34,21 @@
 }
 #reset{
   position: absolute;
+<<<<<<< HEAD
   left: 20px;
   top: 550px;
+=======
+  left: 10px;
+  top: 850px;
+>>>>>>> 1433533afd1c4ebf0baaf3df67d6fa8d6c50d3a8
   width: 100px;
   height:50px;
   background-color: salmon;
   color: white;
 }
 button{
-  background-color: white;
+
+  background-color: #77ffff;
   border: 1px solid black;
 }
 #machineBuy{
