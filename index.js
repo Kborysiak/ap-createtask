@@ -13,6 +13,7 @@ function countInsert(){
 
 function reset(){
   //Colleague Wrote Reset Function//
+  countInsert();
   document.count.display.value = 0;
   i=0;
   stopGame = true;
@@ -31,6 +32,7 @@ function buyMachine(){
     numMachines++
     machineStatus=numMachines;
     numAutoMiners();
+    machineStat();
   }else {
     alert("Insufficient Funds");
   }
@@ -75,8 +77,8 @@ function numAutoFactories(){
 }
 
 function buyFactory(){
-  if(document.count.display.value >= 10){
-    document.count.display.value = document.count.display.value - 10;
+  if(document.count.display.value >= 1000){
+    document.count.display.value = document.count.display.value - 1000;
     numFact++
     console.log(numFact);
     numAutoFactories();
