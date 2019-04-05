@@ -60,15 +60,10 @@ function machineStat(){
 function start(){
   document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
-  document.numAutoFactories.numAutoFactories.value = 0;
 }
 
 function numAutoMiners(){
   document.numAutoMiners.numAutoMiners.value = numMachines;
-}
-
-function numAutoFactories(){
-
 }
 
 function buyFactory(){
